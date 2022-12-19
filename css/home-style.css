@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: mediumaquamarine;
+}
+
+#header1{
+    background-color: darkcyan;
+}
+
+#header1 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkcyan;
+    overflow: hidden;
+}
+
+#header1 li{
+    float: right;
+}
+
+#header1 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+#header1 li a:hover{
+    background-color: darkslategrey;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+}
+
+#left{
+    width: 60%;
+    float: left;
+}
+
+#right{
+    width: 40%;
+    float: right;
+}
+
+#header2{
+    background-image: url(../assets/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    animation: slide 15s infinite;
+    padding: 30px;
+    margin: 5px;
+}
+
+#header2 h1{
+    color: white;
+    font-size: 48px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+@keyframes slide{
+    33%{
+        background-image: url(../assets/cover2.jpg);
+    }
+    66%{
+        background-image: url(../assets/cover3.jpg);
+    }
+    100%{
+        background-image: url(../assets/cover.jpg);
+    }
+}
+
+#section{
+    color: white;
+    font-size: large;
+    padding: 20px;
+}
+
+#section h3{
+    color: blue;
+}
+
+#nav1{
+    background-color: whitesmoke;
+    color: blue;
+    font-size: large;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: 5px;
+}
+
+#nav2{
+    border: solid gray 5px;
+    margin: 5px;
+}
+
+#map{
+    width: 100%;
+    height: auto;
+}
+
+#section2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wisata{
+    display: flex;
+    flex-direction: column;
+}
+
+.wisata a{
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+}
+
+.wisata a:hover{
+    color: white;
+}
+
+.image-wisata{
+    width: 150px;
+    height: 150px;
+    border-radius: 75%;
+}
+
+#footer{
+    background-color: darkgreen;
+    color: white;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
